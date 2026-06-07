@@ -1,328 +1,151 @@
-<!DOCTYPE html>
-<html lang="de">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+@media (max-width: 992px){
 
-<title>Manyol Communication | Karriere & Vertrieb</title>
-
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-
-<style>
-
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family:'Poppins',sans-serif;
-scroll-behavior:smooth;
-}
-
-:root{
---primary:#004d5e;
---gold:#c89c3d;
-}
-
-body{
-background:#fff;
-color:#222;
-overflow-x:hidden;
-}
-
-/* HEADER */
 header{
-position:sticky;
-top:0;
-z-index:1000;
-background:white;
-box-shadow:0 2px 15px rgba(0,0,0,.08);
-display:flex;
-justify-content:space-between;
-align-items:center;
-padding:18px 60px;
+padding:15px 20px;
+flex-direction:column;
+gap:15px;
 }
-
-.logo img{height:70px;}
 
 nav{
-display:flex;
-gap:35px;
-align-items:center;
+flex-wrap:wrap;
+justify-content:center;
+gap:15px;
 }
 
-nav a{
-text-decoration:none;
-color:var(--primary);
-font-weight:600;
-}
-
-nav a:hover{color:var(--gold);}
-
-.apply-btn{
-background:var(--primary);
-color:white;
-text-decoration:none;
-padding:14px 28px;
-border-radius:10px;
-border:2px solid var(--gold);
-font-weight:600;
-}
-
-/* HERO */
 .hero{
-display:grid;
-grid-template-columns:1fr 1.2fr;
-align-items:center;
-padding:80px 70px;
+grid-template-columns:1fr;
+padding:40px 20px;
+text-align:center;
 }
 
-.hero-logo img{max-width:450px;width:100%;}
+.hero-logo{
+order:1;
+}
+
+.hero-logo img{
+max-width:280px;
+margin:auto;
+display:block;
+}
 
 .hero-content{
-border-left:3px solid var(--gold);
-padding-left:35px;
+order:2;
+border-left:none;
+padding-left:0;
+margin-top:30px;
 }
 
 .hero-content h1{
-font-size:60px;
-color:var(--primary);
+font-size:38px;
+line-height:1.2;
 }
 
 .hero-content p{
-font-size:21px;
-margin-bottom:30px;
+font-size:18px;
 }
 
 .hero-buttons{
-display:flex;
-gap:20px;
+flex-direction:column;
+align-items:center;
 }
 
-.btn-primary{
-background:var(--primary);
-color:white;
-padding:16px 35px;
-border-radius:12px;
-text-decoration:none;
-}
-
+.btn-primary,
 .btn-secondary{
-border:2px solid var(--primary);
-color:var(--primary);
-padding:16px 35px;
-border-radius:12px;
-text-decoration:none;
-}
-
-/* BENEFITS */
-.benefits{
-background:var(--primary);
-color:white;
-padding:50px;
-display:grid;
-grid-template-columns:repeat(4,1fr);
-gap:30px;
+width:100%;
+max-width:320px;
 text-align:center;
 }
 
-/* SECTIONS */
 .section{
-padding:90px 60px;
+padding:60px 20px;
 }
 
 .section-title{
-text-align:center;
-font-size:48px;
-color:var(--primary);
-margin-bottom:60px;
+font-size:34px;
 }
 
-.grid{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
-gap:25px;
+.benefits{
+grid-template-columns:1fr 1fr;
+padding:30px 20px;
 }
 
-.card{
-background:white;
-padding:35px;
-border-radius:18px;
-box-shadow:0 10px 25px rgba(0,0,0,.08);
-}
-
-/* TEAM */
-.team-banner{
-height:550px;
-background:url("team bild mayol.png") center/cover no-repeat;
-position:relative;
-}
-
-.team-banner::after{
-content:"";
-position:absolute;
-inset:0;
-background:rgba(0,77,94,.55);
-}
-
-.team-text{
-position:absolute;
-top:50%;
-left:50%;
-transform:translate(-50%,-50%);
-color:white;
-text-align:center;
-width:90%;
-}
-
-/* STATS */
 .stats{
-background:var(--primary);
-padding:55px;
-display:grid;
-grid-template-columns:repeat(4,1fr);
-color:white;
-text-align:center;
+grid-template-columns:1fr 1fr;
+gap:20px;
+padding:40px 20px;
 }
 
-/* CONTACT */
-.contact{
-background:#f6f6f6;
+.team-banner{
+height:350px;
+}
+
+.team-text h2{
+font-size:32px;
+}
+
+.team-text p{
+font-size:16px;
+}
+
+.logo img{
+height:55px;
+}
+
+.apply-btn{
+width:100%;
+text-align:center;
 }
 
 form{
-display:flex;
-flex-direction:column;
-gap:15px;
-max-width:700px;
-margin:auto;
+width:100%;
 }
 
-input,textarea{
-padding:15px;
-border:none;
-border-radius:10px;
-}
-
-button{
-background:var(--primary);
-color:white;
-padding:16px;
-border:none;
-border-radius:10px;
-}
-
-/* WHATSAPP */
 .whatsapp{
-position:fixed;
-bottom:25px;
-right:25px;
-background:#25D366;
-color:white;
-padding:16px 22px;
-border-radius:50px;
-text-decoration:none;
-font-weight:700;
+bottom:15px;
+right:15px;
+padding:14px 18px;
+font-size:14px;
 }
 
-</style>
-</head>
+}
 
-<body>
+@media (max-width: 576px){
 
-<header>
-<div class="logo">
-<img src="manyol communication LOGO.jpeg">
-</div>
+.hero-content h1{
+font-size:28px;
+}
 
-<nav>
-<a href="#">HOME</a>
-<a href="#services">LEISTUNGEN</a>
-<a href="#contact">KARRIERE</a>
-<a href="#about">ÜBER UNS</a>
-<a href="#contact">KONTAKT</a>
-</nav>
+.hero-content p{
+font-size:16px;
+}
 
-<a href="#contact" class="apply-btn">HIER BEWERBEN</a>
-</header>
+.section-title{
+font-size:28px;
+}
 
-<section class="hero">
-<div class="hero-logo">
-<img src="manyol communication LOGO.jpeg">
-</div>
+.benefits{
+grid-template-columns:1fr;
+}
 
-<div class="hero-content">
-<h1>PROFESSIONELLE OUTBOUND TERMINIERUNG</h1>
-<p>Wir vereinbaren qualifizierte Termine für Unternehmen.</p>
+.stats{
+grid-template-columns:1fr;
+}
 
-<div class="hero-buttons">
-<a href="#contact" class="btn-primary">FÜR UNTERNEHMEN</a>
-<a href="#contact" class="btn-secondary">KARRIERE</a>
-</div>
-</div>
-</section>
+.team-banner{
+height:280px;
+}
 
-<section class="benefits">
-<div>Qualifizierte Termine</div>
-<div>Mehr Umsatz</div>
-<div>Teamarbeit</div>
-<div>Transparenz</div>
-</section>
+header{
+padding:15px;
+}
 
-<section class="section" id="services">
-<h2 class="section-title">UNSERE LEISTUNGEN</h2>
+nav{
+flex-direction:column;
+gap:10px;
+}
 
-<div class="grid">
-<div class="card">Outbound Telefonie</div>
-<div class="card">Terminierungsprojekte</div>
-<div class="card">B2B & B2C</div>
-<div class="card">Qualität & Reporting</div>
-</div>
-</section>
+.logo img{
+height:45px;
+}
 
-<section class="team-banner" id="about">
-<div class="team-text">
-<h2>Manyol Communication</h2>
-<p>Wir sind ein modernes Sales & Terminierungs-Team.</p>
-</div>
-</section>
-
-<section class="stats">
-<div>50+</div>
-<div>10.000+</div>
-<div>100+</div>
-<div>98%</div>
-</section>
-
-<section class="section contact" id="contact">
-
-<h2 class="section-title">JETZT BEWERBEN</h2>
-
-<form action="https://formsubmit.co/bewerber-mayolcommunication@outlook.de"
-method="POST"
-enctype="multipart/form-data">
-
-<input type="hidden" name="_captcha" value="false">
-
-<input type="text" name="name" placeholder="Name" required>
-<input type="email" name="email" placeholder="E-Mail" required>
-<input type="tel" name="phone" placeholder="Telefonnummer" required>
-
-<textarea name="message" placeholder="Warum möchtest du bei uns arbeiten?" required></textarea>
-
-<label>Lebenslauf hochladen</label>
-<input type="file" name="cv" accept=".pdf,.doc,.docx" required>
-
-<button type="submit">Bewerbung senden</button>
-</form>
-
-</section>
-
-<footer style="text-align:center;padding:20px;">
-© 2026 Manyol Communication
-</footer>
-
-<a class="whatsapp" href="https://wa.me/905010392419">WhatsApp</a>
-
-</body>
-</html>
+}
