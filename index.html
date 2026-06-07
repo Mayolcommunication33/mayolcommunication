@@ -102,22 +102,27 @@ margin-bottom:30px;
 font-size:38px;
 }
 
-/* CONTACT */
-.contact-box{
+/* CAREER BOX */
+.career-box{
 max-width:700px;
 margin:auto;
+text-align:center;
+padding:20px;
 }
 
+/* FORM (nur UI, kein Backend) */
 form{
 display:flex;
 flex-direction:column;
 gap:12px;
+margin-top:20px;
 }
 
 input,textarea{
 padding:14px;
 border:1px solid #ddd;
 border-radius:10px;
+font-size:16px;
 }
 
 button{
@@ -163,6 +168,7 @@ text-align:center;
 <a class="btn" href="#career">Bewerben</a>
 </header>
 
+<!-- HERO -->
 <section class="hero">
 <div>
 <h1>Outbound Terminierung<br>für Unternehmen</h1>
@@ -175,6 +181,7 @@ text-align:center;
 </div>
 </section>
 
+<!-- SERVICES -->
 <section class="section" id="services">
 <h2>Leistungen</h2>
 <p style="text-align:center;">
@@ -182,16 +189,16 @@ Outbound Telefonie • Terminierung • B2B & B2C Vertrieb
 </p>
 </section>
 
+<!-- CAREER -->
 <section class="section" id="career">
+
 <h2>Karriere</h2>
 
-<div class="contact-box">
-<p style="text-align:center;margin-bottom:20px;">
-Bewirb dich bei Manyol Communication
-</p>
+<div class="career-box">
+<p>Bewirb dich bei Manyol Communication</p>
 
-<!-- NUR VISUELL (noch kein Backend) -->
-<form onsubmit="alert('Bewerbung erfolgreich gesendet! (Demo)'); return false;">
+<!-- KEIN BACKEND (sauber & stabil) -->
+<form onsubmit="alert('Formular aktuell nicht verbunden. Sag mir Bescheid, dann baue ich E-Mail Versand ein.'); return false;">
 
 <input type="text" placeholder="Name" required>
 <input type="email" placeholder="E-Mail" required>
@@ -204,6 +211,7 @@ Bewirb dich bei Manyol Communication
 </div>
 </section>
 
+<!-- CONTACT -->
 <section class="section" id="contact">
 <h2>Kontakt</h2>
 
